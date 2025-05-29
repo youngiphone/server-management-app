@@ -2,8 +2,28 @@ Server Management App
 Une application web pour gérer des serveurs Ubuntu via SSH, vérifier leur statut de mise à jour et effectuer des mises à jour. Inclut une interface moderne avec thème sombre/clair.
 Structure du projet
 server-management-app/
-├── client/                # Frontend React
-├── server/                # Backend Node.js
+├── client/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── index.jsx
+│   │   └── index.css
+│   ├── package.json
+│   ├── vite.config.js
+│   └── tailwind.config.js
+├── server/
+│   ├── src/
+│   │   ├── routes/
+│   │   │   └── servers.js
+│   │   ├── services/
+│   │   │   └── sshService.js
+│   │   ├── config/
+│   │   │   └── config.js
+│   │   └── index.js
+│   ├── package.json
+│   └── .env.example
 ├── .gitignore
 ├── README.md
 └── LICENSE
